@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <a href="index.html" id="parent-link">
+    <button id="your-button">Click me</button>
+  </a>
+  
+  <audio id="sound-effect" src="/shooting-sound-fx-159024.mp3"></audio>
+  
+  <script>
+    const button = document.getElementById('your-button');
+    const soundEffect = document.getElementById('sound-effect');
+
+    button.addEventListener('click', function () {
+      // Play the sound effect
+      soundEffect.play().catch(error => {
+        console.error('Error playing sound:', error);
+      });
+      // Delay the link navigation by a short time to allow the sound to play
+      setTimeout(function () {
+        window.location.href = button.parentNode.href;
+      }, 100); // Adjust the delay time as needed
+    });
+  </script>
+
+</body>
+</html>

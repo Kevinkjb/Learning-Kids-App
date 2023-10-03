@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Andika:wght@400;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-image: url(../images/park.png);
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  font-family: 'Andika', sans-serif;
+}
+a{
+  text-decoration: none;
+}
+.main-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.main-content{
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  place-content: center;
+  gap: 1rem;
+}
+.box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+/* ANIMALS SECTION */
+.animal-img{
+  width: 14rem;
+  height: 12rem;
+}
+.animal-title{
+  font-size: 1.5rem;
+}
+
+/* BACK BTN SECTION */
+.back-btn{
+  margin-top: 2rem;
+  margin-left: 10px;
+  height: 3rem;
+  width: 10rem;
+  font-size: 1.8rem;
+  background-color: chocolate;
+  border: none;
+  color: #fff;
+  font-weight: 600;
+  transition: all .3s;
+  cursor: pointer;
+}
+.back-btn:hover{
+  transition: all .5s;
+  transform: translateY(-12px);
+}

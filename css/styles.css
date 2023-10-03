@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Andika:wght@400;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Andika', sans-serif;
+}
+.main-container{
+  background-image: url(../images/park.png);
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.button-container{
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+}
+.content-title{
+  color: #ffffff;
+  font-size: 2rem;
+}
+.play-btn{
+  width: 12rem;
+  border-radius: 15px;
+  height: 3.5rem;
+  background-color: chocolate;
+  border: none;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: all .3s;
+}
+.play-btn:hover{
+  transition: all .5s;
+  transform: translateY(-12px);
+}
